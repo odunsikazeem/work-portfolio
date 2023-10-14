@@ -2,11 +2,100 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
+.top-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items:center ;
+  background-color: grey;
+  
+}
+
+a {
+  color: rgb(12, 11, 12);
+}
+
+.top-banner h1 {
+  background-color: rgb(14, 201, 226);
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+  
+
+.hero-banner {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/02-hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+  align-items: flex-end;
+  justify-content: space-between;
+} 
+ .hero-banner img {
+  display:flex;
+  width: 200px;
+  height: 200px;
+  display: inline; 
+  border-radius: 50%;
+}
+
+.hero-banner h2 {
+  background-color: rgb(14, 201, 226);
+  padding: 20px;
+  margin-right: 30px;
+}
+
+.page-wrapper {
+    display: grid;
+    grid-gap: 100px 100px;
+     
+  }
+
+.page-section {
+    display: grid;
+    grid-template-columns: 25% 75%;
+  }
+
+.page-section-work {
+    display: flex;
+    gap: 10px; 
+}
+.page-section-work * {
+  flex: 1;
+}
+
+.page-section-work a {
+border: 5px solid grey;
+}
+
+.page-section-contact {
+  display: grid;
+  grid-template-columns: 25% 20% 20% 20% 15%;
+  justify-content: center;
+  align-items: center;
+}
+.page-section-resume {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.port1 {
+  background-image: url("../images/02-portfolio-1.jpg");
+ 
+}
+.port2 {
+  background-image: url("../images/02-portfolio-2.jpg");
+ 
+}
+.port3 {
+  background-image: url("../images/02-portfolio-3.jpg");
+  
+}
+
+@media screen and (max-width: 800px) {
 }
 
 h1,
