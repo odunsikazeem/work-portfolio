@@ -9,6 +9,7 @@ N/A
 ## Usage
 
 Please feel free to peruse my portfolio website. This repository is intended for potential collaborations from fellow developers and clients that have taste for good outcome and exciting projects. Basically,the page could also serve as an eye opener for junior and aspiring developers. 
+<img src=./starter/images/screenshot.png alt=Display webpage>
 
 
 ## Credits
