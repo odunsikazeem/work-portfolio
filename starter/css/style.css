@@ -120,6 +120,13 @@ border: 5px solid grey;
   background-image: url("../images/02-portfolio-3.jpg");  
 }
 
+.port4 {
+  background-image: url("../images/02-portfolio-4.jpg");  
+}
+
+.port5 {
+  background-image: url("../images/02-run-buddy.jpg");  
+}
 @media screen and (max-width: 800px) {
 }
 
