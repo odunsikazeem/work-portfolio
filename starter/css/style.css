@@ -2,12 +2,18 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
 .top-banner {
   display: flex;
   justify-content: space-between;
   align-items:center ;
-  background-color: grey;
-  
+  background-color: grey; 
 }
 
 a {
@@ -20,7 +26,6 @@ a {
   margin-bottom: 10px;
   padding: 20px;
 }
-  
 
 .hero-banner {
   display: flex;
@@ -50,21 +55,40 @@ a {
 
 .page-wrapper {
     display: grid;
-    grid-gap: 100px 100px;
-     
+    grid-gap: 100px 100px;   
   }
 
 .page-section {
     display: grid;
     grid-template-columns: 25% 75%;
   }
-
-.page-section-work {
-    display: flex;
-    gap: 10px; 
+  
+.page-section-work .project {
+  display: flex;
+  gap: 10px; 
+  flex-wrap: wrap;
 }
-.page-section-work * {
-  flex: 1;
+
+.page-section-work .inner {
+  display: flex;
+  gap: 10px; 
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.port {
+  flex: 1 1 49%;
+  height: 100px;
+  position: relative;
+  min-width: 49%;
+}
+
+.bkg {
+  background-color: grey;
+  padding: 3px 5px;
+  position:absolute;
+  bottom: 10px;
+  color: white;
 }
 
 .page-section-work a {
@@ -76,6 +100,8 @@ border: 5px solid grey;
   grid-template-columns: 25% 20% 20% 20% 15%;
   justify-content: center;
   align-items: center;
+
+
 }
 .page-section-resume {
   display: grid;
@@ -91,19 +117,13 @@ border: 5px solid grey;
  
 }
 .port3 {
-  background-image: url("../images/02-portfolio-3.jpg");
-  
+  background-image: url("../images/02-portfolio-3.jpg");  
 }
 
 @media screen and (max-width: 800px) {
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
 
